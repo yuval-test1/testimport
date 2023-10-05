@@ -1,0 +1,10 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type ImageOrderByInput = {
+  id?: SortOrder;
+  jobId?: SortOrder;
+  createdAt?: SortOrder;
+  typeField?: SortOrder;
+  updatedAt?: SortOrder;
+  url?: SortOrder;
+};
