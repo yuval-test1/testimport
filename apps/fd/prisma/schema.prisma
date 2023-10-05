@@ -199,9 +199,3 @@ model Report {
   updatedAt DateTime @updatedAt
   url       String
 }
-
-model Ss {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
