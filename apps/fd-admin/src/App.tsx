@@ -65,6 +65,10 @@ import { ReportList } from "./report/ReportList";
 import { ReportCreate } from "./report/ReportCreate";
 import { ReportEdit } from "./report/ReportEdit";
 import { ReportShow } from "./report/ReportShow";
+import { YyyList } from "./yyy/YyyList";
+import { YyyCreate } from "./yyy/YyyCreate";
+import { YyyEdit } from "./yyy/YyyEdit";
+import { YyyShow } from "./yyy/YyyShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -195,6 +199,13 @@ const App = (): React.ReactElement => {
           edit={ReportEdit}
           create={ReportCreate}
           show={ReportShow}
+        />
+        <Resource
+          name="Yyy"
+          list={YyyList}
+          edit={YyyEdit}
+          create={YyyCreate}
+          show={YyyShow}
         />
       </Admin>
     </div>

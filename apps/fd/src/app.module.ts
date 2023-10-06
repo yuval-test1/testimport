@@ -16,6 +16,7 @@ import { DetailModule } from "./detail/detail.module";
 import { ImageModule } from "./image/image.module";
 import { MeasurementModule } from "./measurement/measurement.module";
 import { ReportModule } from "./report/report.module";
+import { YyyModule } from "./yyy/yyy.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -42,6 +43,7 @@ import { GraphQLModule } from "@nestjs/graphql";
     ImageModule,
     MeasurementModule,
     ReportModule,
+    YyyModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
