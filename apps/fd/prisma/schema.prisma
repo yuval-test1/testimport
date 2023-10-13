@@ -170,7 +170,7 @@ model Detail {
 }
 
 model Image {
-  id        String   @id @default(auto()) @map("_id")
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   job       Job      @relation(fields: [jobId], references: [id])
   jobId     String   @db.ObjectId
   createdAt DateTime @default(now())
@@ -198,4 +198,10 @@ model Report {
   typeField String   @map("type")
   updatedAt DateTime @updatedAt
   url       String
+}
+
+model Yyy {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
